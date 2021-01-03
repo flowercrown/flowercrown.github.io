@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<meta charset="utf-8">
-<title>Flowercrown Landing</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Flowercrown Landing</title>
 
-<body>
-<h1>Hello, I'm Sam</h1>
-<p>asdfsadf</p>
-</body>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background-color:rgb(64, 60, 50);
+                color: white;
+                font-family: 'Rubik', sans-serif;
+
+
+            }
+
+            .grid-container{
+
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr;
+                grid-auto-rows: minmax(5px,auto);
+                justify-items:center;
+                align-items: center; 
+
+                margin-top: 5%;
+
+            }
+
+            .grid-container > div{
+                background: ;
+                padding: 1em;
+                grid-column: 2/3;
+            }
+
+            .grid-container > div:nth-child(odd){
+                background: ;
+            }
+
+            .title{
+                font-size: 25px;
+            }
+
+            .coffee img{
+                transform: scale(2);
+                display: block;
+                margin: auto auto;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="grid-container">
+            <div class="title"><h1>Hello, I'm Sam</h1></div>
+
+            <div class="coffee">
+                <img src="resources/teabag.gif">
+            </div>
+
+            <div class="intro">
+                <p>I'm an engineer, artist, and gamer.<br> See some of my projects listed here</p>
+                <p>contact me at  <a href="https://mailhide.io/e/RC3vEpzX" onclick="popup=window.open('https://mailhide.io/e/RC3vEpzX','mailhidepopup','width=580,height=635'); return false;">s......@gmail.com</a> (using mailhide to prevent crawlers)</p>
+            </div>
+
+            <div class='console'>
+                <div class='console-inner'>
+                    <div id="outputs">
+                    </div>
+                    <div class='output-cmd'><textarea autofocus class='console-input' placeholder="Type command..."></textarea></div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
 
 </html>
